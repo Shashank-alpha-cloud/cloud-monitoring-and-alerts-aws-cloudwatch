@@ -1,1 +1,79 @@
+# cloud-monitoring-and-alerts-aws-cloudwatch
+
+
+Task 2
+
+AWS CloudWatch Monitoring and Alerts: Process Overview
+
+Amazon CloudWatch is a powerful monitoring and management service provided by AWS, designed to collect and track metrics, monitor log files, set alarms, and automate responses to changes in AWS resources. It is widely used to ensure system performance, optimize resources, and provide real-time operational insights.
+
+CloudWatch Monitoring and Metrics
+
+AWS CloudWatch collects data from AWS services, applications, and custom sources. It supports a variety of metrics, including CPU utilization, memory usage, network traffic, and disk I/O. These metrics can be monitored and visualized in real-time via the AWS Management Console, CloudWatch API, or AWS CLI.
+
+Key Features of CloudWatch Monitoring:
+
+Automatic Metrics Collection: CloudWatch automatically collects data from AWS services such as EC2, RDS, Lambda, and others.
+
+Custom Metrics: Users can define and send their own application-specific metrics.
+
+Log Monitoring: CloudWatch Logs stores and monitors logs from applications and AWS services.
+
+Event-driven Actions: CloudWatch Events triggers actions when changes occur in AWS resources.
+
+Dashboards: Visual representation of collected metrics through custom dashboards.
+
+CloudWatch Alarms and Alerts
+
+CloudWatch Alarms are a crucial feature that allows users to set predefined thresholds on monitored metrics and receive notifications or automate actions when those thresholds are breached.
+
+Setting a CloudWatch Alarm: Step-by-Step Process
+
+Define a Metric: Choose an AWS resource metric to monitor (e.g., CPU utilization, memory usage, request count, etc.).
+
+Set Threshold Value: Define the threshold limit that should trigger the alarm (e.g., 20 requests per second).
+
+Specify Evaluation Period: Choose how long the condition must be met before triggering the alarm.
+
+Select Actions: Configure actions like sending notifications via SNS, stopping an EC2 instance, or triggering an AWS Lambda function.
+
+Enable Notification: CloudWatch can send notifications through Amazon SNS, email, SMS, or Lambda functions when an alarm is triggered.
+
+Scenario: Threshold of 20 Triggering an Alarm
+
+In this scenario, an AWS CloudWatch Alarm is set on a metric (e.g., request count per second) with a threshold of 20. When the metric crosses this limit, CloudWatch triggers an alarm and performs a predefined action.
+
+Step-by-Step Execution:
+
+Metric Setup: A CloudWatch metric is monitoring the number of incoming requests to an AWS service (e.g., API Gateway or Load Balancer).
+
+Threshold Defined: The alarm is configured to trigger when the request count exceeds 20 per second.
+
+Data Collection & Evaluation: CloudWatch collects real-time data and compares it with the threshold.
+
+Triggering the Alarm: If the request count surpasses 20 for the specified evaluation period, the alarm state changes to ‘ALARM.’
+
+Notification Sent: CloudWatch sends an alert via SNS to the configured recipient (email, SMS, Lambda, etc.).
+
+Action Execution: Depending on the configured response, AWS can auto-scale instances, throttle requests, or trigger a Lambda function to handle the surge.
+
+Benefits of Using CloudWatch for Monitoring and Alerts
+
+Proactive Issue Resolution: Identifies and resolves issues before they impact users.
+
+Automated Responses: Triggers auto-scaling or other automated actions.
+
+Cost Optimization: Helps in optimizing resource utilization and reducing costs.
+
+Enhanced Security: Detects unusual activities and alerts administrators for quick action.
+
+Compliance and Logging: Maintains logs for audits and compliance.
+
+By leveraging AWS CloudWatch monitoring and alerts, businesses can maintain operational excellence and ensure their applications remain highly available and responsive.
+
+
+
+
+Please find the attachments for the output of cloud monitior and alerted on 
+https://cloudwatch.amazonaws.com/dashboard.html?dashboard=Dashboard&context=eyJSIjoidXMtZWFzdC0xIiwiRCI6ImN3LWRiLTE4MDI5NDIxNDkwMyIsIlUiOiJ1cy1lYXN0LTFfcGgwMDdsVGNLIiwiQyI6IjU1bHJwOWFkdHJqczBqcm84MjkybDltYWcwIiwiSSI6InVzLWVhc3QtMTo0Zjg4ZWNlOS02MGY5LTRjZDUtYjQyMy03OTZjZjAwMzc5YWIiLCJNIjoiUHVibGljIn0=
 
